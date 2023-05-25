@@ -1,0 +1,9 @@
+.display-label, .editor-label {
+    margin-bottom: 0.5em !important;
+}
+
+.yncontainer
+{
+     min-width:110px;
+     padding-bottom:0px !important;
+}
