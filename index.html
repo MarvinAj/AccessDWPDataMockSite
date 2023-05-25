@@ -11,7 +11,9 @@
            .govuk-summary-list__row {
                 border-bottom: 1px ;
             }
-            a.inactiveSc:link {color:#ff0000 !important;}
+            a.inactiveSc:link {color:gray !important;}
+            a.inactiveSc:visited {color: gray;}
+            a.inactiveSc:hover {color: gray;}
             .marginAll { margin:0.6em; padding: 0.3em; font-size:x-small; font-weight:bolder;}
             .govuk-tag--turquoise {border-radius: 1em;}
         </style>
@@ -22,14 +24,6 @@
     <body class="govuk-template__body app-body-class js-enabled" data-new-gr-c-s-check-loaded="14.1111.0" data-gr-ext-installed="">
         <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
         
-   
-    
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCQNZKM"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-    
-    
     
         
     <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
@@ -174,19 +168,19 @@
                             </li>
                             <li class="app-task-list__item">
                               <span class="app-task-list__task-name">
-                                <a href="#" aria-describedby="contact-details-status">
+                                <a href="#" aria-describedby="contact-details-status" class="inactiveSc">
                                     Health Assessment Data
                                 </a>
                               </span>
-                              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">SC In progress</strong>
+                              <strong class="govuk-tag govuk-tag--yellow app-task-list__tag" id="contact-details-status">SC In progress</strong>
                             </li>
                             <li class="app-task-list__item">
                               <span class="app-task-list__task-name">
-                                <a href="#" aria-describedby="list-favourite">
+                                <a href="#" aria-describedby="list-favourite" class="inactiveSc">
                                     Labour Market Data
                                 </a>
                               </span>
-                              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="list-favourite">SC In progress</strong>
+                              <strong class="govuk-tag govuk-tag--yellow app-task-list__tag" id="list-favourite">SC In progress</strong>
                             </li>
                             <li class="app-task-list__item">
                               <span class="app-task-list__task-name">
@@ -194,7 +188,7 @@
                                     Public Sector Pension Data
                                 </a>
                               </span>
-                              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="public-sector-status">SC Required</strong>
+                              <strong class="govuk-tag govuk-tag--orange app-task-list__tag" id="public-sector-status">SC Required</strong>
                             </li>
                             <li class="app-task-list__item">
                               <span class="app-task-list__task-name">
@@ -202,7 +196,7 @@
                                     Local Council Data
                                 </a>
                               </span>
-                              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="local-council-status">SC Required</strong>
+                              <strong class="govuk-tag govuk-tag--orange app-task-list__tag" id="local-council-status">SC Required</strong>
                             </li>
                           </ul>
                         </li>
@@ -268,10 +262,6 @@
         </div>
     </footer>
           
-    <script type="text/javascript" src="/decision/js/jquery-1.11.3.js"></script>
-    <script type="text/javascript" src="/decision/js/custom.js"></script>
-    <script src="/decision/all.js"></script>
-    <script>window.GOVUKFrontend.initAll()</script>
     
       
     
