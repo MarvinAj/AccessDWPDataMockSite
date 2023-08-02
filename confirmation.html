@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="govuk-template">
     <head>
-        <title>Access DWP Data Provider</title>
+        <title>Access DWP Data Confirmation</title>
         <link rel="stylesheet" href="Global.css"> 
         <link rel="stylesheet" href="forms.css">
         <link rel="stylesheet" href="app.css">
@@ -29,8 +29,7 @@
     
         
     <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
-    
-    
+       
     <header class="govuk-header " role="banner" data-module="govuk-header">
       <div class="govuk-header__container govuk-width-container">
         <div class="govuk-header__logo">
@@ -52,7 +51,9 @@
         </div>
       </div>
     </header>
-     
+    
+    
+        
 
     
     <div class="govuk-width-container ">
@@ -70,83 +71,40 @@
       </div>
       
       <main class="govuk-main-wrapper " id="main-content" role="main">
+        <a href="/AccessDWPDataMockSite/index.html" class="govuk-back-link">Back</a>
 
-        <div class="govuk-width-container">
-          <a href="/AccessDWPDataMockSite/options.html" class="govuk-back-link">Back</a>
-          <main class="govuk-main-wrapper " id="main-content" role="main">
-            <div class="govuk-grid-row">
-              <div class="govuk-grid-column-two-thirds-from-desktop">
-                <h1 class="govuk-heading-l">Check information provided before submitting</h1>
-                <h2 class="govuk-heading-m">Details</h2>
-                <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Name
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      Earnings and Income Data
-                    </dd>
-                    <dd class="govuk-summary-list__actions">
-                      <a class="govuk-link" href="#">
-                        Change<span class="govuk-visually-hidden"> name</span>
-                      </a>
-                    </dd>
-                  </div>
+        <div class="govuk-form-group">
 
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Reference
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      Not provided
-                    </dd>
-                    <dd class="govuk-summary-list__actions">
-                      <a class="govuk-link" href="#">
-                        Change<span class="govuk-visually-hidden"> customer reference</span>
-                      </a>
-                    </dd>
+            <div class="govuk-!-margin-top-6">
+
+                <div class="govuk-width-container">
+                    <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+                      <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-two-thirds">
+                          <div class="govuk-panel govuk-panel--confirmation">
+                            <h1 class="govuk-panel__title">
+                              Submission complete
+                            </h1>
+                            <div class="govuk-panel__body">
+                              Your reference number<br><strong>HDJ2123F</strong>
+                            </div>
+                          </div>
+                          <p class="govuk-body">We have sent you a confirmation email.</p>
+                          <h2 class="govuk-heading-m">What happens next</h2>
+
+                          <p class="govuk-body">
+                            <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds)
+                          </p>
+                        </div>
+                      </div>
+                    </main>
                   </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Address
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      007 Slick Street<br>London<br>SE23 6FH
-                    </dd>
-                    <dd class="govuk-summary-list__actions">
-                      <a class="govuk-link" href="#">
-                        Change<span class="govuk-visually-hidden"> address</span>
-                      </a>
-                    </dd>
-                  </div>
-                  <div class="govuk-summary-list__row">
-                    <dt class="govuk-summary-list__key">
-                      Contact details (Data Owner)
-                    </dt>
-                    <dd class="govuk-summary-list__value">
-                      <p class="govuk-body">07700 900457</p>
-                      <p class="govuk-body">john.lon@dwp.com</p>
-                    </dd>
-                    <dd class="govuk-summary-list__actions">
-                      <a class="govuk-link" href="#">
-                        Change<span class="govuk-visually-hidden"> contact details</span>
-                      </a>
-                    </dd>
-                  </div>
-                </dl>
-   
-                <h2 class="govuk-heading-m">Now send your details</h2>
-                <p class="govuk-body">By submitting this information you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-                <form action="/form-handler" method="post" novalidate>
-                  <input type="hidden" name="answers-checked" value="true">
-                  <button class="govuk-button" data-module="govuk-button" onclick="location.href='/AccessDWPDataMockSite/confirmation.html';">
-                    Accept and send
-                  </button>
-                </form>
-              </div>
             </div>
-          </main>
+          
         </div>
+        
+
+        
       </main>
 
     </div>
